@@ -11,4 +11,4 @@ tasks:
     gp sync-done install
 - command: >
     gp sync-await install &&
-    Racing_Game_Against_Trained_AI/main.py
+    python Racing_Game_Against_Trained_AI/main.py
