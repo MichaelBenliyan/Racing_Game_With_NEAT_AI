@@ -1,0 +1,14 @@
+image:
+  file: .gitpod.Dockerfile
+ports: 
+- port: 5900
+  onOpen: ignore
+- port: 6080
+  onOpen: open-preview
+tasks:
+- command: >
+    pip3 install -r requirements.txt && 
+    gp sync-done install
+- command: >
+    gp sync-await install &&
+    python Racing_Game/Racing_Game_Against_Trained_AI/main.py
