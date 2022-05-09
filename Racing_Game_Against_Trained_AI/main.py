@@ -9,11 +9,11 @@ pygame.font.init()
 
 
 '''Track Background Images'''
-GRASS = scale_image(pygame.image.load("images/grass.jpg"), 1.8)
-TRACK = pygame.image.load("images/my_track.png")
-TRACK_BORDER = pygame.image.load("images/my_track_border.png")
+GRASS = scale_image(pygame.image.load("Racing_Game_Against_Trained_AI/images/grass.jpg"), 1.8)
+TRACK = pygame.image.load("Racing_Game_Against_Trained_AI/images/my_track.png")
+TRACK_BORDER = pygame.image.load("Racing_Game_Against_Trained_AI/images/my_track_border.png")
 
-FINISH_LINE = pygame.image.load("images/finish_line.png")
+FINISH_LINE = pygame.image.load("Racing_Game_Against_Trained_AI/images/finish_line.png")
 FINISH_LINE_POSITION = (37, 300)
 bg_images = [(GRASS, (0, 0)), (TRACK, (0, 0)), (FINISH_LINE, FINISH_LINE_POSITION)]
 
@@ -24,22 +24,22 @@ TRACK_BORDER_MASK = pygame.mask.from_surface(TRACK_BORDER)
 
 
 '''Interactive Windows'''
-MAIN_MENU = pygame.image.load("images/main_menu.png")
-WIN_SCREEN = pygame.image.load("images/win_screen.png")
-LOSE_SCREEN = pygame.image.load("images/lose_screen.png")
-END_SCREEN = pygame.image.load("images/end_screen.png")
+MAIN_MENU = pygame.image.load("Racing_Game_Against_Trained_AI/images/main_menu.png")
+WIN_SCREEN = pygame.image.load("Racing_Game_Against_Trained_AI/images/win_screen.png")
+LOSE_SCREEN = pygame.image.load("Racing_Game_Against_Trained_AI/images/lose_screen.png")
+END_SCREEN = pygame.image.load("Racing_Game_Against_Trained_AI/images/end_screen.png")
 
 
 '''Countdown Graphics'''
-COUNTDOWN_3 = pygame.image.load("images/countdown_3.png")
-COUNTDOWN_2 = pygame.image.load("images/countdown_2.png")
-COUNTDOWN_1 = pygame.image.load("images/countdown_1.png")
-COUNTDOWN_GO = pygame.image.load("images/countdown_go.png")
+COUNTDOWN_3 = pygame.image.load("Racing_Game_Against_Trained_AI/images/countdown_3.png")
+COUNTDOWN_2 = pygame.image.load("Racing_Game_Against_Trained_AI/images/countdown_2.png")
+COUNTDOWN_1 = pygame.image.load("Racing_Game_Against_Trained_AI/images/countdown_1.png")
+COUNTDOWN_GO = pygame.image.load("Racing_Game_Against_Trained_AI/images/countdown_go.png")
 
 
 '''Cars Images'''
-PLAYER_CAR = scale_image(pygame.image.load("images/convertable_car.png"), 0.75)
-AI_CAR = scale_image(pygame.image.load("images/cpu_convertable_car.png"), 0.75)
+PLAYER_CAR = scale_image(pygame.image.load("Racing_Game_Against_Trained_AI/images/convertable_car.png"), 0.75)
+AI_CAR = scale_image(pygame.image.load("Racing_Game_Against_Trained_AI/images/cpu_convertable_car.png"), 0.75)
 
 
 '''Window''' 
@@ -521,7 +521,7 @@ def run_end_screen(genomes, config):
 
 
 '''Play_Game'''
-def play_game(config_path, genome_path="Prev_Winners/20_92__5_2_0042.pkl"):
+def play_game(config_path, genome_path="Racing_Game_Against_Trained_AI/Prev_Winners/20_92__5_2_0042.pkl"):
     # Load requried NEAT config
     config = neat.config.Config(neat.DefaultGenome, neat.DefaultReproduction, neat.DefaultSpeciesSet, neat.DefaultStagnation, config_path)
 
