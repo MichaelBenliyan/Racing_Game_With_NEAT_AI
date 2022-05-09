@@ -9,11 +9,11 @@ pygame.font.init()
 
 
 '''Track Background Images'''
-GRASS = scale_image(pygame.image.load("images/grass.jpg"), 1.7)
-TRACK = pygame.image.load("images/my_track.png")
-TRACK_BORDER = pygame.image.load("images/my_track_border.png")
+GRASS = scale_image(pygame.image.load("Machine_Learning_Sim/images/grass.jpg"), 1.7)
+TRACK = pygame.image.load("Machine_Learning_Sim/images/my_track.png")
+TRACK_BORDER = pygame.image.load("Machine_Learning_Sim/images/my_track_border.png")
 
-FINISH_LINE = pygame.image.load("images/finish_line.png")
+FINISH_LINE = pygame.image.load("Machine_Learning_Sim/images/finish_line.png")
 FINISH_LINE_POSITION = (37, 300)
 bg_images = [(GRASS, (0, 0)), (TRACK, (0, 0)), (FINISH_LINE, FINISH_LINE_POSITION)]
 
@@ -24,8 +24,8 @@ TRACK_BORDER_MASK = pygame.mask.from_surface(TRACK_BORDER)
 
 
 '''Cars Images'''
-PLAYER_CAR = scale_image(pygame.image.load("images/convertable_car.png"), 0.75)
-CPU_CAR = scale_image(pygame.image.load("images/cpu_convertable_car.png"), 0.75)
+PLAYER_CAR = scale_image(pygame.image.load("Machine_Learning_Sim/images/convertable_car.png"), 0.75)
+CPU_CAR = scale_image(pygame.image.load("Machine_Learning_Sim/images/cpu_convertable_car.png"), 0.75)
 
 
 '''Window''' 
@@ -499,9 +499,9 @@ def run(config_path):
     winner = p.run(run_genomes,20)
 
     #Save winner to winner.pkl file in game directory to be able to use later
-    with open("winner.pkl", "wb") as f:
-        pickle.dump(winner, f)
-        f.close()
+    # with open("winner.pkl", "wb") as f:
+    #     pickle.dump(winner, f)
+    #     f.close()
 
 # '''Replay Genome'''
 # '''Not Working'''
