@@ -1,5 +1,5 @@
 # Racing Game Against Trained AI
-This is a car racing game against an AI trained using the NEAT module in python.
+This is a car racing game against an AI trained using the NEAT module in Python.
 
 Press "Open in Gitpod" button below to play!
 
