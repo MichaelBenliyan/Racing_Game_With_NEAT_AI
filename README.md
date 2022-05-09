@@ -14,6 +14,12 @@ Each difficulty has 5 levels where the cars will get progressively faster. Beat 
 
 TIP: Drag down the terminal under the game to make the game larger. 
 
+# Machine Learning Simulator
+To see the Machine Learning Simulator in action: 
+1) Close the Racing Game window in the Gitpod browser. 
+2) Type "python Machine_Learning_Sim/main.py" in the terminal under the Gitpod browser without the quotation marks. 
+3) Press enter 
+
 # Run in Gitpod
 
 You can also run Racing Game Against Trained AI in Gitpod, a free online dev environment for GitHub:
