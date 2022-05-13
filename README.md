@@ -22,6 +22,6 @@ To see the Machine Learning Simulator in action:
 
 # Run in Gitpod
 
-You can also run Racing Game Against Trained AI in Gitpod, a free online dev environment for GitHub:
+You can also run my Racing Game in Gitpod, a free online dev environment for GitHub:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/MichaelBenliyan/Racing_Game_With_NEAT_AI)
