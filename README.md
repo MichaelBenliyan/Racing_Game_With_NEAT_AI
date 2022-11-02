@@ -28,5 +28,5 @@ You can also run my Racing Game in Gitpod, a free online dev environment for Git
 
 
 # Run in Gitpod
-![MachineLearning](Screenshots/MachingLearning.png)
+![MachineLearning](Screenshots/MachineLearning.png)
 ![v2](Screenshots/v2.png)
